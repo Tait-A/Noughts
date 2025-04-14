@@ -136,8 +136,24 @@ class Noughts:
             return " "
         else:
             return value
+        
+def startGame():
+    print("Welcome to Noughts and Crosses!")
+    print("You are X and the computer is O")
+    print("Enter your move as a number between 1 and 9")
+    print("The moves available are: [1, 2, 3, 4, 5, 6, 7, 8, 9]")
+    print("The board is as follows:")
+    print("+---+---+---+")
+    print("| 1 | 2 | 3 |")
+    print("+---+---+---+")
+    print("| 4 | 5 | 6 |")
+    print("+---+---+---+")
+    print("| 7 | 8 | 9 |")
+    print("+---+---+---+")
+    print("Good luck!")
+    print()
+    player = True
+    game = Noughts(player)
 
-
-player = True
-
-game = Noughts(player)
+if __name__ == "__main__":
+    startGame()
